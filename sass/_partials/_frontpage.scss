@@ -1,0 +1,174 @@
+#fp-hero {
+  // background: red;
+  text-align: center;
+  color: white;
+  .container {
+    max-width: 800px;
+  }
+  .flex-row {
+    // flex-direction: column;
+    padding: 100px 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fp-hero-title {
+
+    background-image: url('assets/bk2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    img {
+      padding: 0;
+      margin: 0;
+      height: 200px;
+    }
+    h1 {
+      text-transform: uppercase;
+      font-size: 500%;
+      padding: 0;
+      margin: 0;
+    }
+    p{
+      font-size: 200%;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .fp-hero-message {
+    background: $main-color;
+    .flex-row {
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 68px;
+    }
+    p{
+      font-size: 23px;
+    }
+  }
+}
+// end of hero
+
+#fp-projects-grid-wrapper {
+  color: $dark-text;
+
+
+  .fp-projects-grid-title{
+    margin: 80px;
+    text-align: center;
+    font-size: 72px;
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+  .flex-row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding: 10px;
+  }
+  .fp-projects-grid-box-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .fp-projects-grid-box {
+    flex-grow: 1;
+    width: 33.33%;
+    background-image: url('assets/lava.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $light-text;
+    height: 300px;
+    border: 10px solid white;
+    &:nth-child(3n+1) {
+      width: 66.66%;
+    }
+    &:hover, &:focus{
+      .fp-projects-grid-box-overlay {
+        height: 100%;
+      }
+    }
+  }
+  .fp-projects-grid-box-overlay {
+    *{
+      margin: 10px 0;
+    }
+    p{
+      max-width: 70%;
+    }
+    .fp-projects-grid-box-overlay-button {
+      padding: 20px;
+      border: 1px solid white;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        background: white;
+        color: $dark-text;
+      }
+    }
+    height: 0%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.35);
+    transition: all 0.3s ease-in-out;
+
+  }
+}
+// end of projects
+
+
+#fp-blog-grid {
+  color: $dark-text;
+  .fp-button {
+    padding: 20px;
+    border: 1px solid $dark-text;
+    margin: 40px 0;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background: $dark-text;
+      color: $light-text;
+    }
+  }
+
+  .fp-blog-grid-title{
+    font-size: 72px;
+    margin: 80px;
+  }
+
+  .fp-blog-grid-box-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .flex-row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .fp-blog-grid-box {
+    width: 33%;
+    border: 10px solid white;
+    .fp-blog-grid-box-image {
+      width: 100%;
+      height: 300px;
+      background: transparent url('assets/loft.jpg') no-repeat center;
+      background-size: cover;
+
+    }
+
+  }
+
+}
