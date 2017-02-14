@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="utf-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <link rel="stylesheet" type="text/css" href="sass/_vendors/font-awesome/css/font-awesome.min.css" />
   <link rel="stylesheet" type="text/css" href="style.css" />
   <title>frontpage.php</title>
 </head>
@@ -17,23 +19,30 @@
           </div>
           <div class="nav-menu">
             <ul>
-              <li><a href="#" class="nav-menu-item">Home</a></li>
-              <li><a href="#" class="nav-menu-item">Projects</a></li>
-              <li><a href="#" class="nav-menu-item">Blog</a></li>
-              <li><a href="#" class="nav-menu-item">Contact</a></li>
+              <a id="nav-home-link" href="#" class="nav-menu-item"><li>Home</li></a>
+              <a id="nav-projects-link" href="#" class="nav-menu-item"><li>Projects</li></a>
+              <a id="nav-blog-link" href="#" class="nav-menu-item"><li>Blog</li></a>
+              <a id="nav-contact-link" href="#" class="nav-menu-item"><li>Contact</li></a>
             </ul>
           </div>
         </div>
+      </div>
+      <div class="projects-menu-wrapper">
+        <div class="container">
         <div class="flex-row">
           <div class="projects-menu">
             <ul>
-              <li><a href="#" class="nav-menu-item">Home</li></a>
-              <li><a href="#" class="nav-menu-item">Projects</a></li>
-              <li><a href="#" class="nav-menu-item">Blog</a></li>
-              <li><a href="#" class="nav-menu-item">Contact</a></li>
+              <a href="#" class="projects-menu-item"><li>Web</li></a>
+              <a href="#" class="projects-menu-item"><li>Creative Coding</li></a>
+              <a href="#" class="projects-menu-item"><li>Music</li></a>
+              <a href="#" class="projects-menu-item"><li>Electronics</li></a>
+              <a href="#" class="projects-menu-item"><li>Videos</li></a>
+              <a href="#" class="projects-menu-item"><li>Photography</li></a>
             </ul>
           </div>
         </div>
+      </div>
+      </div>
       </div>
     </div>
 
@@ -181,37 +190,54 @@
     <div class="flex-row">
       <a href="#" class="fp-button">View Blog</a>
     </div>
+  </div>
   <div id="footer">
     <div class="flex-row">
       <div class="footer-newsletter-col">
+        <h1>Newsletter</h1>
         <p>
-          subscribe to newsletter...bla bla bla
+          If you'd like to stay up to day on my projects and events, subscribe to the Newsletter!
         </p>
         <form class="footer-newsletter-form">
-          <input />
-          <button>subscribe</button>
+          <input /><span><div class="btn">subscribe</div></span>
+
         </form>
       </div>
       <div class="footer-social-icons-col">
-        <a href="#">social</a>
-        <a href="#">social</a>
-        <a href="#">social</a>
-        <a href="#">social</a>
-        <a href="#">social</a>
-        <a href="#">social</a>
-        <a href="#">social</a>
-        <a href="#">social</a>
+        <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-soundcloud" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-bandcamp" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-mixcloud" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
       </div>
-
     </div>
   </div>
 
 
+<!--
+
+<i class="fa fa-twitter-square" aria-hidden="true"></i>
+<i class="fa fa-youtube-square" aria-hidden="true"></i>
+<i class="fa fa-github" aria-hidden="true"></i>
+<i class="fa fa-codepen" aria-hidden="true"></i>
+<i class="fa fa-soundcloud" aria-hidden="true"></i>
+<i class="fa fa-bandcamp" aria-hidden="true"></i>
+<i class="fa fa-mixcloud" aria-hidden="true"></i>
+<i class="fa fa-instagram" aria-hidden="true"></i>
+
+-->
 
 
 
-
-
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <script
+  src="js/app.js"></script>
 </body>
 
 </html>
