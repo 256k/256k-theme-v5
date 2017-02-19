@@ -6,9 +6,14 @@ html, body {
 }
 
 * {
+  font-family: 'PT Sans', sans-serif;
   box-sizing: border-box;
   // border: 1px solid red;
   font-family: sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 0.05em;
+  font-family: 'Roboto', sans-serif;
 }
 
 div {

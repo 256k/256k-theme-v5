@@ -26,6 +26,7 @@ gulp.task('sass', function () {
 
 // Default task to be run with `gulp`
 gulp.task('default', ['sass', 'browser-sync'], function () {
+  gulp.watch("*.html").on("change", reload);
     gulp.watch("sass/**/*.scss", ['sass']);
 
 });

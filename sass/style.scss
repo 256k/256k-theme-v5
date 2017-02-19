@@ -1,9 +1,12 @@
 // *{
 //   border: 1px solid red;
 // }
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700|Roboto:300,400,500,700');
+
+@import "_partials/_variables";
 @import "_vendors/normalize";
 @import "_partials/_base";
-@import "_partials/_variables";
 @import "_partials/_nav";
 @import "_partials/_frontpage";
 @import "_partials/_footer";
+@import "_partials/_blog-index";

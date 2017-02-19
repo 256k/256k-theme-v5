@@ -1,0 +1,81 @@
+#blog-page {
+  font-size: 16px;
+  width: 80%;
+  margin: 60px auto;
+}
+
+.single-blog-post-content-container{
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+.blog-post-wrapper {
+  color: $dark-text;
+  margin: 40px 0;
+  .blog-post-image {
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('http://fillmurray.com/1230/1420');
+  }
+}
+.single-blog-post-wrapper {
+  .blog-post-image {
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('http://fillmurray.com/1230/1420');
+  }
+}
+
+  .blog-controls{
+    margin: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $main-color-light-shade;
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+
+  .blog-post-date {
+    margin-top: -15px;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    color: $main-color-light-shade;
+  }
+
+  .blog-post-content {
+    font-size: 1.5rem;
+    line-height: 1.3;
+    // padding: 20px 0;
+  }
+
+  a.blog-post-button {
+    display: block;
+    text-align: center;
+    padding: 10px 20px;
+    width: 150px;
+    margin: 30px auto;
+    border: 1px solid $dark-text;
+    transition: all 0.3s ease-in-out;
+
+    &:focus,
+    &:hover {
+      cursor: pointer;
+      background: $dark-text;
+      color: $light-text;
+    }
+  }
+
+  .blog-post-info {
+    color: $main-color-light-shade;
+    margin-top: -15px;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
