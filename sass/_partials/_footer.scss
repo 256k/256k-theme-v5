@@ -3,75 +3,99 @@
   color: white;
   text-align: center;
 
-  .flex-row{
+  .flex-row {
     justify-content: center;
     align-items: flex-start;
+    flex-direction: column;
     padding: 100px 20px;
 
-  .footer-newsletter-col{
-    width: 50%;
-    margin: 40px;
-  }
-  .footer-social-icons-col{
-    width: 33%;
-    margin: 40px auto;
-  }
-  .footer-newsletter-col {
-    h1 {
-      margin: 0;
-      font-size: 64px;
-    }
-    form {
-      display: flex;
+    .footer-newsletter-col {
       width: 100%;
-      justify-content: center;
-      align-items: flex-start;
-    }
-    input {
-      height: 40px;
-      width: 400px;
-    }
-    .btn{
-      // padding: 20px;
-      height: 40px;
-      padding: 0 20px;
-      line-height: 40px;
-      margin: 0 10px;
-      border: 1px solid white;
+      margin: 40px auto;
     }
 
-  }
-  .footer-social-icons-col {
-    // letter-spacing: 1em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 3em;
-    a{
-      min-width: 25%;
-      margin: 20px 0;
+    .footer-newsletter-col {
+      h1 {
+        margin: 0;
+        font-size: 64px;
+      }
+
+      form {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: flex-start;
+      }
+
+      input {
+        height: 40px;
+        max-width: 400px;
+      }
+
+      .btn {
+        // padding: 20px;
+        height: 40px;
+        padding: 0 20px;
+        line-height: 40px;
+        margin: 0 10px;
+        border: 1px solid white;
+      }
     }
 
+    .footer-social-icons-col {
+      width: 100%;
+      max-width: 800px;
+      margin: 40px auto;
+    }
+
+    .footer-social-icons-col {
+      // letter-spacing: 1em;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      font-size: 3em;
+      // min-width: 40%;
+    }
   }
 }
-}
-
-@media( max-width: 900px){
-  #footer{
-    .flex-row{
+@media( max-width: 900px) {
+  #footer {
+    .flex-row {
       flex-direction: column;
       justify-content: center;
       align-items: center;
 
-    .footer-newsletter-col{
-      width: 80%;
-    }
-    .footer-social-icons-col{
-      font-size: 5em;
-      width: 80%;
+      .footer-newsletter-col {
+        width: 80%;
+      }
 
+      .footer-social-icons-col {
+        font-size: 3em;
+      }
     }
   }
+}
+@media (max-width: 500px) {
+  #footer {
+    .flex-row {
+      .footer-newsletter-col {
+        h1 {
+          font-size: 28px;
+        }
+      }
+
+      form {
+        flex-direction: column;
+        align-items: center !important;
+      }
+      input{
+        width: 100%;
+      }
+      .btn{
+        margin: 10px auto !important;
+
+      }
+    }
   }
 }
