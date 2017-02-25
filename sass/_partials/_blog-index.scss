@@ -79,3 +79,12 @@
     justify-content: space-between;
     align-items: flex-start;
   }
+
+@media (max-width: 800px){
+  .blog-post-content{
+    font-size: initial;
+  }
+  .blog-controls * {
+    font-size: 1rem;
+  }
+}
