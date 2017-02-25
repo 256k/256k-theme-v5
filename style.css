@@ -914,6 +914,90 @@ a {
   #footer .flex-row .btn {
     margin: 10px auto !important; } }
 
+.projects-hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 100px;
+  background-image: url("http://www.fillmurray.com/1200/1000");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  box-shadow: inset 0 0 0 100000px rgba(0, 0, 0, 0.6); }
+
+.project-hero-title {
+  font-size: 5rem; }
+
+.project-hero-description {
+  font-size: 1.3rem;
+  line-height: 1.3;
+  letter-spacing: 0.07rem; }
+
+.projects-grid {
+  padding: 40px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.projects-grid-box {
+  margin: 40px 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 33.33%;
+  min-width: 300px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .projects-grid-box .project-image {
+    border: 1px solid red;
+    height: 200px;
+    width: 100%;
+    background-image: url("http://www.fillmurray.com/700/400");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+.projects-grid-box-button {
+  padding: 10px 20px;
+  border: 1px solid #2e2e2e;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+  .projects-grid-box-button:hover, .projects-grid-box-button:focus {
+    background: #2e2e2e;
+    color: white; }
+
 #blog-page {
   font-size: 16px;
   width: 80%;
