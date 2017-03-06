@@ -11,6 +11,7 @@
       </form>
     </div>
     <div class="footer-social-icons-col">
+
       <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
       <a href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
       <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
