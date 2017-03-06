@@ -598,8 +598,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    height: 300px;
-    border: 10px solid white; }
+    height: 300px; }
     #fp-projects-grid-wrapper .fp-projects-grid-box:hover .fp-projects-grid-box-overlay, #fp-projects-grid-wrapper .fp-projects-grid-box:focus .fp-projects-grid-box-overlay {
       height: 100%; }
   #fp-projects-grid-wrapper .fp-projects-grid-box-overlay {
@@ -610,11 +609,12 @@ a {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0.35);
+    background: rgba(0, 0, 0, 0.55);
     transition: all 0.3s ease-in-out; }
     #fp-projects-grid-wrapper .fp-projects-grid-box-overlay * {
       margin: 10px 0; }
     #fp-projects-grid-wrapper .fp-projects-grid-box-overlay p {
+      font-size: 1.2rem;
       max-width: 70%; }
     #fp-projects-grid-wrapper .fp-projects-grid-box-overlay .fp-projects-grid-box-overlay-button {
       padding: 20px;

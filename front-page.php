@@ -18,7 +18,7 @@
     <div class="flex-row">
       <div class="container">
 
-      <h1>Welcome to 256klabs</h1>
+      <h1>Welcome to <?php bloginfo( 'name' ); ?></h1>
       <p>
         <?php
         if ( have_posts() ) :
@@ -40,7 +40,7 @@
   <div class="flex-row">
     <h1 class="fp-projects-grid-title">PROJECTS</h1>
     <div class="fp-projects-grid-box-wrapper">
-      <div class="fp-projects-grid-box" onClick="return true">
+      <div class="fp-projects-grid-box" onClick="return true" style="background-image: url('http://fillmurray.com/400/500')">
         <div class="fp-projects-grid-box-overlay">
           <h3>project type</h3>
           <p>
@@ -51,18 +51,18 @@
       </a>
         </div>
       </div>
-      <div class="fp-projects-grid-box" onClick="return true">
+      <div class="fp-projects-grid-box" onClick="return true" style="background-image: url('http://fillmurray.com/450/550')">
         <div class="fp-projects-grid-box-overlay">
           <h3>project type</h3>
           <p>
             project description. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
           </p>
-          <a href="#" class="fp-projects-grid-box-overlay-button">
+          <a href="<?php echo get_category_link('209'); ?>" class="fp-projects-grid-box-overlay-button">
         View
       </a>
         </div>
       </div>
-      <div class="fp-projects-grid-box" onClick="return true">
+      <div class="fp-projects-grid-box" onClick="return true" style="background-image: url('http://fillmurray.com/550/650')">
         <div class="fp-projects-grid-box-overlay">
           <h3>project type</h3>
           <p>
@@ -74,7 +74,7 @@
         </div>
 
       </div>
-      <div class="fp-projects-grid-box" onClick="return true">
+      <div class="fp-projects-grid-box" onClick="return true" style="background-image: url('http://fillmurray.com/500/600')">
         <div class="fp-projects-grid-box-overlay">
           <h3>project type</h3>
           <p>
@@ -137,7 +137,7 @@
     </div>
 
   <div class="flex-row">
-    <a href="blog-index.html" class="fp-button">View Blog</a>
+    <a href="blog" class="fp-button">View Blog</a>
   </div>
 </div>
 

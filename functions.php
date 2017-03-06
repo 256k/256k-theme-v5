@@ -5,7 +5,7 @@ function addResources() {
   wp_enqueue_style('style', get_stylesheet_uri());
   wp_enqueue_style( 'font-awesome.min', get_template_directory_uri() .'/sass/_vendors/font-awesome/css/font-awesome.min.css', array(), null, 'all'  );
   wp_enqueue_script( 'jquery', $in_footer = true );
-  // wp_enqueue_script( 'app', get_template_directory_uri() 'js/app.js' );
+  wp_enqueue_script( 'app', get_template_directory_uri() .'/js/app.js', true );
 }
 
 add_action('wp_enqueue_scripts', 'addResources');
@@ -33,6 +33,9 @@ function theme_setup(){
 
   // featured image support
   add_theme_support('post-thumbnails');
+
+  // adding website title dynamically
+  add_theme_support( 'title-tag' );
 
 
 
