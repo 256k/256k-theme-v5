@@ -2,6 +2,7 @@ var gulp        = require('gulp');
 var browserSync = require('browser-sync').create();;
 var reload      = browserSync.reload;
 var sass        = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
 
 // browser-sync task for starting the server.
 gulp.task('browser-sync', function() {
@@ -36,6 +37,7 @@ gulp.task('browser-sync', function() {
 gulp.task('sass', function () {
     return gulp.src('sass/*.scss')
         .pipe(sass())
+        .pipe(autoprefixer())
         .pipe(gulp.dest('./'))
         .pipe(reload({stream:true}));
 });
