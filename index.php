@@ -16,7 +16,8 @@ get_header();
 
 
 
-          <div class="blog-post-image" style="background-image: url('<?php echo $thumbnailvar ?>')"></div>
+      <a href=" <?php the_permalink(); ?> ">
+          <div class="blog-post-image" style="background-image: url('<?php echo $thumbnailvar ?>')"></div></a>
           <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
           <p class="blog-post-date">
             <?php the_time('d - m - Y'); ?>
