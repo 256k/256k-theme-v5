@@ -7,7 +7,7 @@
         if (has_post_thumbnail()):
           $thumbnailvar = get_the_post_thumbnail_url($post, 'full');
         else :
-          $thumbnailvar = 'http://www.fillmurray.com/600/800';
+          $thumbnailvar = 'http://localhost:8080/wordpress/wp-content/uploads/2017/03/10253891_673167906064960_4534000355006174346_n.jpg';
         endif;
         ?>
         <div class="blog-post-image" style="background-image: url('<?php echo $thumbnailvar ?>')"></div>

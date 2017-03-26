@@ -8,7 +8,7 @@ $coverImage = 'http://localhost:8080/wordpress/wp-content/uploads/2017/03/music-
 elseif (is_category( $category = 'visual' )) :
 $coverImage = 'http://localhost:8080/wordpress/wp-content/uploads/2017/03/visual-projects.jpg';
 else :
-  $coverImage = 'http://www.fillmurray.com/1200/1000';
+  $coverImage = 'http://localhost:8080/wordpress/wp-content/uploads/2017/03/10253891_673167906064960_4534000355006174346_n.jpg';
 endif;
 ?>
 <div class="projects-hero" style="background-image: url('<?php echo $coverImage ?>')">
@@ -32,7 +32,7 @@ endif;
       if (has_post_thumbnail()):
         $thumbnailvar = get_the_post_thumbnail_url($post, 'full');
       else :
-        $thumbnailvar = 'http://www.fillmurray.com/600/80';
+        $thumbnailvar = 'http://localhost:8080/wordpress/wp-content/uploads/2017/03/10253891_673167906064960_4534000355006174346_n.jpg';
       endif;?>
       
         <div class="projects-grid-box">

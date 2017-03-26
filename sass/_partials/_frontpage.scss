@@ -92,7 +92,6 @@
   .fp-projects-grid-box {
     flex-grow: 1;
     width: 50%;
-    background-image: url('assets/lava.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -104,6 +103,9 @@
       .fp-projects-grid-box-overlay {
         height: 100%;
       }
+    }
+    h1{
+      text-transform: uppercase;
     }
   }
 

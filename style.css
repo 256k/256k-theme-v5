@@ -703,7 +703,6 @@ a {
         -ms-flex-positive: 1;
             flex-grow: 1;
     width: 50%;
-    background-image: url("assets/lava.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -711,6 +710,8 @@ a {
     height: 300px; }
     #fp-projects-grid-wrapper .fp-projects-grid-box:focus .fp-projects-grid-box-overlay, #fp-projects-grid-wrapper .fp-projects-grid-box:hover .fp-projects-grid-box-overlay {
       height: 100%; }
+    #fp-projects-grid-wrapper .fp-projects-grid-box h1 {
+      text-transform: uppercase; }
   #fp-projects-grid-wrapper .fp-projects-grid-box-overlay {
     height: 0;
     overflow: hidden;
@@ -1045,7 +1046,6 @@ a {
 .project-image {
   height: 200px;
   width: 100%;
-  background-image: url("http://www.fillmurray.com/700/400");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }

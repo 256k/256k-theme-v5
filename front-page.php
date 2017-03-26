@@ -36,13 +36,14 @@
     </div>
   </div>
 </div>
+
 <div id="fp-projects-grid-wrapper">
   <div class="flex-row">
     <h1 class="fp-projects-grid-title">PROJECTS</h1>
     <div class="fp-projects-grid-box-wrapper">
-      <div class="fp-projects-grid-box" onClick="return true" style="background-image: url('http://fillmurray.com/400/500')">
+      <div class="fp-projects-grid-box" onClick="return true" style="background-image: url('http://localhost:8080/wordpress/wp-content/uploads/2017/03/web-projects.jpg')">
         <div class="fp-projects-grid-box-overlay">
-          <h1>WEB</h1>
+          <h1><?php echo get_the_category_by_ID( 210 )?></h1>
           <p>
             Collection of websites and web applications created by Fayek Helmi
           </p>
@@ -52,9 +53,9 @@
       </a>
         </div>
       </div>
-      <div class="fp-projects-grid-box" onClick="return true" style="background-image: url('http://fillmurray.com/450/550')">
+      <div class="fp-projects-grid-box" onClick="return true" style="background-image: url('http://localhost:8080/wordpress/wp-content/uploads/2017/03/electronics-projects.jpg')">
         <div class="fp-projects-grid-box-overlay">
-          <h1>ELECTRONICS</h1>
+          <h1><?php echo get_the_category_by_ID( 211 )?></h1>
           <p>
             Collection of custom DIY electronic devices designed and or built by Fayek Helmi
           </p>
@@ -63,9 +64,9 @@
       </a>
         </div>
       </div>
-      <div class="fp-projects-grid-box" onClick="return true" style="background-image: url('http://fillmurray.com/550/650')">
+      <div class="fp-projects-grid-box" onClick="return true" style="background-image: url('http://localhost:8080/wordpress/wp-content/uploads/2017/03/visual-projects.jpg')">
         <div class="fp-projects-grid-box-overlay">
-          <h1>VISUAL</h1>
+          <h1><?php echo get_the_category_by_ID( 212 )?></h1>
           <p>
             Collection of Processing sketches, p5js sketches, CAD files, graphic designs and other visual items created by Fayek Helmi
           </p>
@@ -75,9 +76,9 @@
         </div>
 
       </div>
-      <div class="fp-projects-grid-box" onClick="return true" style="background-image: url('http://fillmurray.com/500/600')">
+      <div class="fp-projects-grid-box" onClick="return true" style="background-image: url('http://localhost:8080/wordpress/wp-content/uploads/2017/03/music-projects.jpg')">
         <div class="fp-projects-grid-box-overlay">
-          <h1>MUSIC</h1>
+          <h1><?php echo get_the_category_by_ID( 209 )?></h1>
           <p>
             Collection of music and music related projects created by Fayek Helmi
           </p>
@@ -103,7 +104,7 @@
           if (has_post_thumbnail()):
             $thumbnailvar = get_the_post_thumbnail_url($post, 'full');
           else :
-            $thumbnailvar = 'http://www.fillmurray.com/600/800';
+            $thumbnailvar = 'http://localhost:8080/wordpress/wp-content/uploads/2017/03/10253891_673167906064960_4534000355006174346_n.jpg';
           endif;
         ?>
               <div class="fp-blog-grid-box">
