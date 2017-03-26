@@ -1,0 +1,22 @@
+.navigation_post_links{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  p {
+    font-size: 1.5rem;
+    color: $main-color;
+    font-weight: bold;
+  }
+
+}
+.blog-post-content {
+  font-size: 2rem;
+}
+
+@media (max-width: 600px){
+  .navigation_post_links{
+    p {
+      font-size: 1rem;
+    }
+  }
+}

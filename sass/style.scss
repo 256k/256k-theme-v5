@@ -1,6 +1,10 @@
-// *{
-//   border: 1px solid red;
-// }
+/*
+Theme name: 256k labs theme
+Author: Fayek
+Description: wp-convert branch
+Version: 0.0.1
+*/
+
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700|Roboto:300,400,500,700');
 
 @import "_partials/_variables";
@@ -9,5 +13,6 @@
 @import "_partials/_nav";
 @import "_partials/_frontpage";
 @import "_partials/_footer";
-@import "_partials/_projects";
+@import "_partials/_category-page";
+@import "_partials/_single";
 @import "_partials/_blog-index";
