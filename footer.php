@@ -1,15 +1,5 @@
 <div id="footer">
   <div class="flex-row">
-    <div class="footer-newsletter-col">
-      <h1>Newsletter</h1>
-      <p>
-        If you'd like to stay up to day on my projects and events, subscribe to the Newsletter!
-      </p>
-      <form class="footer-newsletter-form">
-        <input /><span><div class="btn">subscribe</div></span>
-
-      </form>
-    </div>
     <div class="footer-social-icons-col">
 
       <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
