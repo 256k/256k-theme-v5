@@ -9,7 +9,7 @@ get_header();
       if (has_post_thumbnail()):
         $thumbnailvar = get_the_post_thumbnail_url($post, 'full');
       else :
-        $thumbnailvar = 'http://www.fillmurray.com/600/800';
+        $thumbnailvar = 'http://www.fillmurray.com/600/80';
       endif;
     ?>
     <div class="blog-post-wrapper">

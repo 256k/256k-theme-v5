@@ -1,98 +1,62 @@
 <?php get_header(); ?>
-<div class="projects-hero">
 
-  <h1 class="project-hero-title">PROJECT TYPE</h1>
-  <div class="container">
-    <p class="project-hero-description">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-      in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
+<div id="fp-projects-grid-wrapper">
+  <div class="flex-row">
+    <h1 class="fp-projects-grid-title">PROJECTS</h1>
+    <div class="fp-projects-grid-box-wrapper">
+      <div class="fp-projects-grid-box" onClick="return true" style="background-image: url('http://fillmurray.com/400/500')">
+        <div class="fp-projects-grid-box-overlay">
+          <h1>WEB</h1>
+          <p>
+            Collection of websites and web applications created by Fayek Helmi
+          </p>
+          <!-- visual category # 212 -->
+          <a href="<?php echo get_category_link( 210 ); ?>" class="fp-projects-grid-box-overlay-button">
+        View
+      </a>
+        </div>
+      </div>
+      <div class="fp-projects-grid-box" onClick="return true" style="background-image: url('http://fillmurray.com/450/550')">
+        <div class="fp-projects-grid-box-overlay">
+          <h1>ELECTRONICS</h1>
+          <p>
+            Collection of custom DIY electronic devices designed and or built by Fayek Helmi
+          </p>
+          <a href="<?php echo get_category_link(211); ?>" class="fp-projects-grid-box-overlay-button">
+        View
+      </a>
+        </div>
+      </div>
+      <div class="fp-projects-grid-box" onClick="return true" style="background-image: url('http://fillmurray.com/550/650')">
+        <div class="fp-projects-grid-box-overlay">
+          <h1>VISUAL</h1>
+          <p>
+            Collection of Processing sketches, p5js sketches, CAD files, graphic designs and other visual items created by Fayek Helmi
+          </p>
+          <a href="<?php echo get_category_link( 212 ); ?>" class="fp-projects-grid-box-overlay-button">
+        View
+      </a>
+        </div>
+
+      </div>
+      <div class="fp-projects-grid-box" onClick="return true" style="background-image: url('http://fillmurray.com/500/600')">
+        <div class="fp-projects-grid-box-overlay">
+          <h1>MUSIC</h1>
+          <p>
+            Collection of music and music related projects created by Fayek Helmi
+          </p>
+          <a href="<?php echo get_category_link( 209 ); ?>" class="fp-projects-grid-box-overlay-button">
+        View
+      </a>
+        </div>
+      </div>
+
+    </div>
   </div>
 </div>
 
 
-<div class="projects-grid">
-  <div class="projects-grid-box">
-    <div class="project-image"></div>
-    <h2 class="project-title">Project Title</h2>
-    <p>
-      project description. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-    </p>
-    <a href="#" class="projects-grid-box-button">
-  view
-</a>
-  </div>
-  <div class="projects-grid-box">
-    <div class="project-image"></div>
-    <h2 class="project-title">Project Title</h2>
-    <p>
-      project description. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-    </p>
-    <a href="#" class="projects-grid-box-button">
-  view
-</a>
-  </div>
-  <div class="projects-grid-box">
-    <div class="project-image"></div>
-    <h2 class="project-title">Project Title</h2>
-    <p>
-      project description. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-    </p>
-    <a href="#" class="projects-grid-box-button">
-  view
-</a>
-  </div>
-  <div class="projects-grid-box">
-    <div class="project-image"></div>
-    <h2 class="project-title">Project Title</h2>
-    <p>
-      project description. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-    </p>
-    <a href="#" class="projects-grid-box-button">
-  view
-</a>
-  </div>
-  <div class="projects-grid-box">
-    <div class="project-image"></div>
-    <h2 class="project-title">Project Title</h2>
-    <p>
-      project description. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-    </p>
-    <a href="#" class="projects-grid-box-button">
-  view
-</a>
-  </div>
-  <div class="projects-grid-box">
-    <div class="project-image"></div>
-    <h2 class="project-title">Project Title</h2>
-    <p>
-      project description. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-    </p>
-    <a href="#" class="projects-grid-box-button">
-  view
-</a>
-  </div>
-  <div class="projects-grid-box">
-    <div class="project-image"></div>
-    <h2 class="project-title">Project Title</h2>
-    <p>
-      project description. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-    </p>
-    <a href="#" class="projects-grid-box-button">
-  view
-</a>
-  </div>
-  <div class="projects-grid-box">
-    <div class="project-image"></div>
-    <h2 class="project-title">Project Title</h2>
-    <p>
-      project description. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-    </p>
-    <a href="#" class="projects-grid-box-button">
-  view
-</a>
-  </div>
-</div>
-
+<div style="margin-bottom: 200px">
+  
 </div>
 <?php get_footer(); ?>

@@ -2,9 +2,11 @@
   // background: red;
   text-align: center;
   color: white;
+
   .container {
     max-width: 800px;
   }
+
   .flex-row {
     // flex-direction: column;
     padding: 200px 0;
@@ -13,39 +15,43 @@
   }
 
   .fp-hero-title {
-
     background-image: url('assets/bk2.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
     img {
       padding: 0;
       margin: 0;
       height: 400px;
     }
+
     h1 {
       text-transform: uppercase;
       font-size: 500%;
       padding: 0;
       margin: 0;
     }
-    p{
+
+    p {
       font-size: 200%;
       padding: 0;
       margin: 0;
-
     }
   }
 
   .fp-hero-message {
     background: $main-color;
+
     .flex-row {
       flex-direction: column;
     }
+
     h1 {
       font-size: 68px;
     }
-    p{
+
+    p {
       font-size: 23px;
       line-height: 1.5em;
     }
@@ -57,14 +63,13 @@
   color: $dark-text;
   margin-bottom: 60px;
 
-
-  .fp-projects-grid-title{
+  .fp-projects-grid-title {
     margin: 80px;
     text-align: center;
     font-size: 72px;
   }
 
-  *{
+  * {
     margin: 0;
     padding: 0;
   }
@@ -75,13 +80,15 @@
     align-items: stretch;
     padding: 10px;
   }
-  .fp-projects-grid-box-wrapper{
+
+  .fp-projects-grid-box-wrapper {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
+
   .fp-projects-grid-box {
     flex-grow: 1;
     width: 50%;
@@ -92,30 +99,16 @@
     color: $light-text;
     height: 300px;
     // border: 10px solid white;
-    &:hover, &:focus{
+    &:focus,
+    &:hover {
       .fp-projects-grid-box-overlay {
         height: 100%;
       }
     }
   }
+
   .fp-projects-grid-box-overlay {
-    *{
-      margin: 10px 0;
-    }
-    p{
-      font-size: 1.2rem;
-      max-width: 70%;
-    }
-    .fp-projects-grid-box-overlay-button {
-      padding: 20px;
-      border: 1px solid white;
-      transition: all 0.3s ease-in-out;
-      &:hover {
-        background: white;
-        color: $dark-text;
-      }
-    }
-    height: 0%;
+    height: 0;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -123,29 +116,51 @@
     justify-content: center;
     align-items: center;
     background: rgba(0, 0, 0, 0.55);
-    transition: all 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    
+    * {
+      margin: 10px 0;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 70%;
+      text-align: justify;
+    }
+
+    .fp-projects-grid-box-overlay-button {
+      padding: 20px;
+      border: 1px solid white;
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        background: white;
+        color: $dark-text;
+      }
+    }
 
   }
 }
 // end of projects
 
-
 #fp-blog-grid {
   background: rgb(227, 227, 227);
   color: $dark-text;
   border: 20px solid white;
+
   .fp-button {
     padding: 20px;
     border: 1px solid $dark-text;
     margin: 40px 0;
-    transition: all 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+
     &:hover {
       background: $dark-text;
       color: $light-text;
     }
   }
 
-  .fp-blog-grid-title{
+  .fp-blog-grid-title {
     font-size: 72px;
     margin: 80px;
   }
@@ -157,51 +172,55 @@
     align-items: flex-start;
     width: 100%;
   }
+
   .flex-row {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
   .fp-blog-grid-box {
     width: 33%;
-
     border: 10px solid rgb(227, 227, 227);
+
     .fp-blog-grid-box-image {
       width: 100%;
       height: 300px;
       background: transparent url('assets/loft.jpg') no-repeat center;
       background-size: cover;
-      transition:  0.2s ease-in-out;
-      &:hover{
+      transition: 0.2s ease-in-out;
+
+      &:hover {
         transform: scale(1.05);
         box-shadow: inset 0 0 0 10000px rgba(0, 0, 0, 0.4);
       }
-
     }
-    h2{
+
+    h2 {
       font-size: 1.7rem;
     }
-    p{
+
+    p {
       font-size: 1.2rem;
-      a{
+
+      a {
         color: $main-color;
         text-decoration: underline;
         font-weight: bold;
-        transition: all 0.3s ease;
+        transition: .3s ease;
+
         &:hover {
           color: $main-color-light-shade;
         }
       }
     }
-
   }
-
 }
-
-@media (min-width: 800px) and (max-width: 1400px){
-  #fp-projects-grid-wrapper{
+@media (min-width: 800px) and (max-width: 1400px) {
+  #fp-projects-grid-wrapper {
     .fp-projects-grid-box {
       width: 50%;
+
       &:nth-child(3n+1) {
         width: 50%;
       }
@@ -209,90 +228,103 @@
   }
 }
 @media (max-width: 800px) {
-  #fp-hero{
-
-    .fp-hero-title{
+  #fp-hero {
+    .fp-hero-title {
       .flex-row {
         flex-direction: column;
       }
-
     }
-    .fp-hero-message{
-      h1{
+
+    .fp-hero-message {
+      h1 {
         font-size: 48px;
       }
-      p{
+
+      p {
         padding: 10px;
       }
     }
   }
-  #fp-projects-grid-wrapper{
-    .fp-projects-grid-title{
+
+  #fp-projects-grid-wrapper {
+    .fp-projects-grid-title {
       font-size: 48px;
     }
+
     .fp-projects-grid-box {
       width: 100%;
     }
   }
+
   #fp-blog-grid {
-    .fp-blog-grid-title{
+    .fp-blog-grid-title {
       font-size: 48px;
     }
-    .fp-blog-grid-box-wrapper{
+
+    .fp-blog-grid-box-wrapper {
       flex-direction: column;
     }
+
     .fp-blog-grid-box {
       width: 100%;
     }
   }
-
-} // end of media
+}
+// end of media
 @media (max-width: 500px) {
-  #fp-hero{
-
-    .fp-hero-title{
+  #fp-hero {
+    .fp-hero-title {
       .flex-row {
         flex-direction: column;
       }
-      img{
+
+      img {
         height: 200px;
       }
-      h1{
+
+      h1 {
         font-size: 300%;
       }
-      p{
+
+      p {
         font-size: 125%;
       }
-
     }
-    .fp-hero-message{
-      h1{
+
+    .fp-hero-message {
+      h1 {
         font-size: 28px;
       }
-      p{
+
+      p {
         font-size: 22px;
         padding: 20px;
       }
     }
   }
-  #fp-projects-grid-wrapper{
-    .fp-projects-grid-title{
+
+  #fp-projects-grid-wrapper {
+    .fp-projects-grid-title {
       font-size: 26px;
     }
+
     .fp-projects-grid-box {
       width: 100%;
     }
   }
+
   #fp-blog-grid {
-    .fp-blog-grid-title{
+    .fp-blog-grid-title {
       font-size: 36px;
     }
-    .fp-blog-grid-box-wrapper{
+
+    .fp-blog-grid-box-wrapper {
       flex-direction: column;
     }
+
     .fp-blog-grid-box {
       width: 100%;
     }
   }
-
-} // end of media
+}
+// end of media
