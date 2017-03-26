@@ -1,5 +1,17 @@
-<?php get_header(); ?>
-<div class="projects-hero">
+<?php get_header();
+if (is_category( $category = 'web' )) :
+$coverImage = 'http://localhost:8080/wordpress/wp-content/uploads/2017/03/web-projects.jpg';
+elseif (is_category( $category = 'electronics' )) :
+$coverImage = 'http://localhost:8080/wordpress/wp-content/uploads/2017/03/electronics-projects.jpg';
+elseif (is_category( $category = 'music' )) :
+$coverImage = 'http://localhost:8080/wordpress/wp-content/uploads/2017/03/music-projects.jpg';
+elseif (is_category( $category = 'visual' )) :
+$coverImage = 'http://localhost:8080/wordpress/wp-content/uploads/2017/03/visual-projects.jpg';
+else :
+  $coverImage = 'http://www.fillmurray.com/1200/1000';
+endif;
+?>
+<div class="projects-hero" style="background-image: url('<?php echo $coverImage ?>')">
 
   <h1 class="project-hero-title"><?php single_cat_title( '', true ) ?></h1>
   <div class="container">
