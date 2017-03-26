@@ -15,9 +15,11 @@
         <div class="flex-row">
           <div class="nav-title">
             <a href="<?php bloginfo('url') ?>"><h1><?php bloginfo( 'name' ); ?></h1></a>
+            <h1 class="drop-button"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></h1>
           </div>
 
           <?php wp_nav_menu( $args = array('theme_location' => 'primary' ) ); ?>
+          
 
 
         </div>
