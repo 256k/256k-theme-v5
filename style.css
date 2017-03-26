@@ -890,7 +890,7 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 100px 20px; }
+    padding: 50px 20px; }
     #footer .flex-row .footer-newsletter-col {
       width: 100%;
       margin: 40px auto; }
