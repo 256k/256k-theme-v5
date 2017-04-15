@@ -18,7 +18,7 @@
             <h1 class="drop-button"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></h1>
           </div>
 
-          <?php wp_nav_menu( $args = array('theme_location' => 'primary' ) ); ?>
+          <?php wp_nav_menu( $args = array('theme_location' => 'nav-menu' ) ); ?>
           
 
 

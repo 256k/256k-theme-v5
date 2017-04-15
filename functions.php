@@ -34,7 +34,7 @@ function theme_setup(){
 
   // registering menus
   register_nav_menus(array(
-  'nav-menu' => __("Navigation Menu"),
+  'nav-menu' => __("Navigation Menuz"),
   'footer' => __("footer Menu")
   ));
 
@@ -50,3 +50,9 @@ function theme_setup(){
 }
 
 add_action('after_setup_theme', 'theme_setup');
+
+/*Hide admin bar*/
+add_action('get_header', 'remove_admin_login_header');
+function remove_admin_login_header() {
+	remove_action('wp_head', '_admin_bar_bump_cb');
+}

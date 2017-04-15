@@ -98,6 +98,9 @@
     color: $light-text;
     height: 300px;
     // border: 10px solid white;
+    &:first-of-type{
+      width: 100%
+    }
     &:focus,
     &:hover {
       .fp-projects-grid-box-overlay {
@@ -223,9 +226,9 @@
     .fp-projects-grid-box {
       width: 50%;
 
-      &:nth-child(3n+1) {
-        width: 50%;
-      }
+      // &:nth-child(3n+1) {
+      //   width: 50%;
+      // }
     }
   }
 }

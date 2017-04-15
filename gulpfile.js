@@ -13,7 +13,7 @@ gulp.task('browser-sync', function() {
     browserSync.init(files, {
         //browsersync with a php server
         proxy: {
-            target: "localhost:8080/wordpress",
+            target: "localhost:8888/wordpress",
             proxyRes: [function(res) {
                     res.headers["Expires"] = "0";
                     res.headers["Cache-Control"] = "no-cache, no-store, must-revalidate";
