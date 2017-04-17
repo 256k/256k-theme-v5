@@ -1218,7 +1218,7 @@ a.blog-post-button {
             align-items: center; }
   .blog-page-content {
     width: 80%;
-    margin: auto; }
+    margin: auto !important; }
   #sidebar {
     width: 80%;
     text-align: center; }
