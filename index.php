@@ -2,6 +2,9 @@
 get_header();
 ?>
   <div id="blog-page">
+    <div class="blog-page-content">
+      
+    
 <?php
 
     if (have_posts()):
@@ -64,6 +67,9 @@ get_header();
 
 
 </div>
+<?php get_sidebar(); ?>
+</div>
   <?php
+  
 get_footer();
  ?>

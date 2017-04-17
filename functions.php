@@ -44,15 +44,25 @@ function theme_setup(){
 
   // adding website title dynamically
   add_theme_support( 'title-tag' );
-
-
-
 }
-
 add_action('after_setup_theme', 'theme_setup');
 
-/*Hide admin bar*/
+// Hide admin bar
 add_action('get_header', 'remove_admin_login_header');
 function remove_admin_login_header() {
 	remove_action('wp_head', '_admin_bar_bump_cb');
+}
+
+// adding widgets (and sidebar) to wp admin interface
+add_action( 'widgets_init', 'theme_slug_widgets_init' );
+function theme_slug_widgets_init() {
+    register_sidebar( array(
+        'name' => __( 'Main Sidebar', '256k-theme' ),
+        'id' => 'sidebar-1',
+        'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'theme-slug' ),
+        'before_widget' => '<li id="%1$s" class="widget %2$s">',
+	'after_widget'  => '</li>',
+	'before_title'  => '<h2 class="widgettitle">',
+	'after_title'   => '</h2>',
+    ) );
 }
