@@ -4,7 +4,7 @@
   <div class="fp-hero-title">
     <div class="flex-row">
       <div class="fp-hero-title-img">
-        <img src="wp-content/themes/256ktest-recreation/assets/logo-white.png" />
+        <img src="http://www.256klabs.com/wpdev/wp-content/uploads/2017/04/logo-white.png" />
       </div>
       <div class="fp-hero-title-header">
         <h1><?php bloginfo('name'); ?></h1>
