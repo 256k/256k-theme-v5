@@ -1,11 +1,11 @@
 #blog-page{
   display: flex;
+  padding-left: 40px;
   
 }
 .blog-page-content {
   font-size: 16px;
   width: 70%;
-  margin-left: 40px;
 }
 
 .single-blog-post-content-container{
@@ -115,15 +115,17 @@
     }
   }
 
-@media (max-width: 900px){
+@media (max-width: 800px){
   #blog-page{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-left: 0;
   }
+  
   .blog-page-content {
+    /*test?*/
     width: 80%;
-    margin-left: 0;
   
   }
   #sidebar{
