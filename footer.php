@@ -2,14 +2,14 @@
   <div class="flex-row">
     <div class="footer-social-icons-col">
 
-      <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-      <a href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
-      <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-      <a href="#"><i class="fa fa-codepen" aria-hidden="true"></i></a>
-      <a href="#"><i class="fa fa-soundcloud" aria-hidden="true"></i></a>
-      <a href="#"><i class="fa fa-bandcamp" aria-hidden="true"></i></a>
-      <a href="#"><i class="fa fa-mixcloud" aria-hidden="true"></i></a>
-      <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      <a href="http://https://www.facebook.com/theskyis256k" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+      <a href="https://www.youtube.com/channel/UCzEjCF2xuF2FR_lNDFVK-qw" target="_blank"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+      <a href="https://www.github.com/256k" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+      <a href="http://codepen.io/fayekhelmi/" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+      <a href="https://soundcloud.com/theskyis256k" target="_blank"><i class="fa fa-soundcloud" aria-hidden="true"></i></a>
+      <a href="https://256k.bandcamp.com/" target="_blank"><i class="fa fa-bandcamp" aria-hidden="true"></i></a>
+      <a href="https://www.mixcloud.com/fayekhelmi/" target="_blank"><i class="fa fa-mixcloud" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/fayek/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
     </div>
   </div>
 </div>
