@@ -4,44 +4,52 @@
   <div class="flex-row">
     <h1 class="fp-projects-grid-title">PROJECTS</h1>
     <div class="fp-projects-grid-box-wrapper">
+      <div class="fp-projects-grid-wrapbox">
+      <div class="fp-projects-grid-box" onClick="return true" style="background-image: url('http://www.256klabs.com/wpdev/wp-content/uploads/2017/04/web-projects.jpg')">
+        <div class="fp-projects-grid-box-overlay">
+          <h1><?php echo get_the_category_by_ID( 3 )?></h1>
+          <p>
+            <!-- web -->
+            <?php echo category_description( $category = 3 ) ?>
+          </p>
+          
+          <a href="<?php echo get_category_link( 3 ); ?>" class="fp-projects-grid-box-overlay-button">
+        View
+      </a>
+        </div>
+      </div>
+    </div>
+      <div class="fp-projects-grid-wrapbox" >
+      <div class="fp-projects-grid-box" onClick="return true" style="background-image: url('http://www.256klabs.com/wpdev/wp-content/uploads/2017/04/electronics-projects.jpg')">
+        <div class="fp-projects-grid-box-overlay">
+          <h1><?php echo get_the_category_by_ID( 6 )?></h1>
+          <p>
+            <!-- electronics -->
+            <?php echo category_description( $category = 6 ) ?>
+          </p>
+          <a href="<?php echo get_category_link( 6 ); ?>" class="fp-projects-grid-box-overlay-button">
+        View
+      </a>
+        </div>
+
+      </div>
+    </div>
+    <div class="fp-projects-grid-wrapbox" >
+      <div class="fp-projects-grid-box" onClick="return true" style="background-image: url('http://www.256klabs.com/wpdev/wp-content/uploads/2017/04/music-projects.jpg')">
+        <div class="fp-projects-grid-box-overlay">
+          <h1>
+            <!-- arts -->
+            <?php echo get_the_category_by_ID( 4 )?></h1>
+          <p>
+            <?php echo category_description( $category = 4 ) ?>
+          </p>
+          <a href="<?php echo get_category_link(4); ?>" class="fp-projects-grid-box-overlay-button">
+        View
+      </a>
+        </div>
+      </div>
+    </div>
       
-      <div class="fp-projects-grid-box" onClick="return true" style="background-image: url('http://localhost:8080/wordpress/wp-content/uploads/2017/03/web-projects.jpg')">
-        <div class="fp-projects-grid-box-overlay">
-          <h1><?php echo get_the_category_by_ID( 210 )?></h1>
-          <p>
-            Collection of websites and web applications created by Fayek Helmi
-          </p>
-          <!-- visual category # 212 -->
-          <a href="<?php echo get_category_link( 210 ); ?>" class="fp-projects-grid-box-overlay-button">
-        View
-      </a>
-        </div>
-      </div>
-      <div class="fp-projects-grid-wrapbox" style="background-image: url('http://fillmurray.com/1244/1433')">
-        
-      
-      <div class="fp-projects-grid-box" onClick="return true">
-        <div class="fp-projects-grid-box-overlay">
-          <h1><?php echo get_the_category_by_ID( 211 )?></h1>
-          <p>
-            Collection of custom DIY electronic devices designed and or built by Fayek Helmi
-          </p>
-          <a href="<?php echo get_category_link(211); ?>" class="fp-projects-grid-box-overlay-button">
-        View
-      </a>
-        </div>
-      </div>
-      </div>
-      <div class="fp-projects-grid-box" onClick="return true" style="background-image: url('http://localhost:8080/wordpress/wp-content/uploads/2017/03/visual-projects.jpg')">
-        <div class="fp-projects-grid-box-overlay">
-          <h1><?php echo get_the_category_by_ID( 212 )?></h1>
-          <p>
-            Collection of Processing sketches, p5js sketches, CAD files, graphic designs and other visual items created by Fayek Helmi
-          </p>
-          <a href="<?php echo get_category_link( 212 ); ?>" class="fp-projects-grid-box-overlay-button">
-        View
-      </a>
-        </div>
 
 
     </div>
