@@ -4,6 +4,7 @@
   <div class="flex-row">
     <h1 class="fp-projects-grid-title">PROJECTS</h1>
     <div class="fp-projects-grid-box-wrapper">
+      
       <div class="fp-projects-grid-box" onClick="return true" style="background-image: url('http://localhost:8080/wordpress/wp-content/uploads/2017/03/web-projects.jpg')">
         <div class="fp-projects-grid-box-overlay">
           <h1><?php echo get_the_category_by_ID( 210 )?></h1>
@@ -16,7 +17,10 @@
       </a>
         </div>
       </div>
-      <div class="fp-projects-grid-box" onClick="return true" style="background-image: url('http://localhost:8080/wordpress/wp-content/uploads/2017/03/electronics-projects.jpg')">
+      <div class="fp-projects-grid-wrapbox" style="background-image: url('http://fillmurray.com/1244/1433')">
+        
+      
+      <div class="fp-projects-grid-box" onClick="return true">
         <div class="fp-projects-grid-box-overlay">
           <h1><?php echo get_the_category_by_ID( 211 )?></h1>
           <p>
@@ -26,6 +30,7 @@
         View
       </a>
         </div>
+      </div>
       </div>
       <div class="fp-projects-grid-box" onClick="return true" style="background-image: url('http://localhost:8080/wordpress/wp-content/uploads/2017/03/visual-projects.jpg')">
         <div class="fp-projects-grid-box-overlay">
@@ -38,18 +43,6 @@
       </a>
         </div>
 
-      </div>
-      <div class="fp-projects-grid-box" onClick="return true" style="background-image: url('http://localhost:8080/wordpress/wp-content/uploads/2017/03/music-projects.jpg')">
-        <div class="fp-projects-grid-box-overlay">
-          <h1><?php echo get_the_category_by_ID( 209 )?></h1>
-          <p>
-            Collection of music and music related projects created by Fayek Helmi
-          </p>
-          <a href="<?php echo get_category_link( 209 ); ?>" class="fp-projects-grid-box-overlay-button">
-        View
-      </a>
-        </div>
-      </div>
 
     </div>
   </div>

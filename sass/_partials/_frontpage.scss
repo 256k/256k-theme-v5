@@ -15,7 +15,7 @@
   }
 
   .fp-hero-title {
-    background-image: url('assets/bk2.jpg');
+    background-image: url('http://www.256klabs.com/wpdev/wp-content/uploads/2017/04/bk2.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -78,7 +78,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
-    padding: 10px;
   }
 
   .fp-projects-grid-box-wrapper {
@@ -88,19 +87,21 @@
     justify-content: center;
     align-items: center;
   }
-
-  .fp-projects-grid-box {
+  .fp-projects-grid-wrapbox {
     flex-grow: 1;
+    padding: 20px;
     width: 50%;
+    &:first-of-type{
+      width: 100%;
+    }
+  }
+  .fp-projects-grid-box {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color: $light-text;
     height: 300px;
-    // border: 10px solid white;
-    &:first-of-type{
-      width: 100%
-    }
+    width: 100%;
     &:focus,
     &:hover {
       .fp-projects-grid-box-overlay {
@@ -130,7 +131,8 @@
     p {
       font-size: 1.2rem;
       max-width: 70%;
-      text-align: justify;
+      text-align: center;
+      letter-spacing: 0.1em;
     }
 
     .fp-projects-grid-box-overlay-button {
@@ -149,9 +151,12 @@
 // end of projects
 
 #fp-blog-grid {
-  background: rgb(227, 227, 227);
   color: $dark-text;
-  border: 20px solid white;
+  padding: 20px;
+  .flex-row{
+      background: rgb(227, 227, 227);
+  }
+
 
   .fp-button {
     padding: 20px;
@@ -221,17 +226,7 @@
     }
   }
 }
-@media (min-width: 800px) and (max-width: 1400px) {
-  #fp-projects-grid-wrapper {
-    .fp-projects-grid-box {
-      width: 50%;
 
-      // &:nth-child(3n+1) {
-      //   width: 50%;
-      // }
-    }
-  }
-}
 @media (max-width: 800px) {
   #fp-hero {
     .fp-hero-title {
