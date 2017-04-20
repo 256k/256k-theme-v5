@@ -10,7 +10,7 @@
           <h1><?php echo get_the_category_by_ID( 3 )?></h1>
           <p>
             <!-- web -->
-            <?php echo category_description( $category = 3 ) ?>
+            <?php echo category_description( $category = 5 ) ?>
           </p>
           
           <a href="<?php echo get_category_link( 3 ); ?>" class="fp-projects-grid-box-overlay-button">
@@ -41,7 +41,7 @@
             <!-- arts -->
             <?php echo get_the_category_by_ID( 4 )?></h1>
           <p>
-            <?php echo category_description( $category = 4 ) ?>
+            <?php echo category_description( $category = 7 ) ?>
           </p>
           <a href="<?php echo get_category_link(4); ?>" class="fp-projects-grid-box-overlay-button">
         View
