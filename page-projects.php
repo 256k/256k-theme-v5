@@ -7,13 +7,13 @@
       <div class="fp-projects-grid-wrapbox">
       <div class="fp-projects-grid-box" onClick="return true" style="background-image: url('http://www.256klabs.com/wpdev/wp-content/uploads/2017/04/web-projects.jpg')">
         <div class="fp-projects-grid-box-overlay">
-          <h1><?php echo get_the_category_by_ID( 3 )?></h1>
+          <h1><?php echo get_the_category_by_ID( 5 )?></h1>
           <p>
             <!-- web -->
             <?php echo category_description( $category = 5 ) ?>
           </p>
           
-          <a href="<?php echo get_category_link( 3 ); ?>" class="fp-projects-grid-box-overlay-button">
+          <a href="<?php echo get_category_link( 5 ); ?>" class="fp-projects-grid-box-overlay-button">
         View
       </a>
         </div>
@@ -39,11 +39,11 @@
         <div class="fp-projects-grid-box-overlay">
           <h1>
             <!-- arts -->
-            <?php echo get_the_category_by_ID( 4 )?></h1>
+            <?php echo get_the_category_by_ID( 7 )?></h1>
           <p>
             <?php echo category_description( $category = 7 ) ?>
           </p>
-          <a href="<?php echo get_category_link(4); ?>" class="fp-projects-grid-box-overlay-button">
+          <a href="<?php echo get_category_link(7); ?>" class="fp-projects-grid-box-overlay-button">
         View
       </a>
         </div>
