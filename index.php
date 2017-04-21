@@ -12,7 +12,7 @@ get_header();
       if (has_post_thumbnail()):
         $thumbnailvar = get_the_post_thumbnail_url($post, 'full');
       else :
-        $thumbnailvar = 'http://localhost:8080/wordpress/wp-content/uploads/2017/03/10253891_673167906064960_4534000355006174346_n.jpg';
+        $thumbnailvar = 'http://www.256klabs.com/wpdev/wp-content/uploads/2017/04/bk2.jpg';
       endif;
     ?>
     <div class="blog-post-wrapper">

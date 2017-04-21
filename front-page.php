@@ -105,7 +105,7 @@
           if (has_post_thumbnail()):
             $thumbnailvar = get_the_post_thumbnail_url($post, 'full');
           else :
-            $thumbnailvar = 'http://fillmurray.com/800/1200';
+            $thumbnailvar = 'http://www.256klabs.com/wpdev/wp-content/uploads/2017/04/bk2.jpg';
           endif;
         ?>
               <div class="fp-blog-grid-box">
