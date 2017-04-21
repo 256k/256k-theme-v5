@@ -1,0 +1,20 @@
+project list:
+=============
+
+>WEB projects
+- 256klabs.com
+- reactTimer (Tymr)
+- WeatherApp
+- BixiFinder
+- ein Bikes
+
+
+>Electronics projects
+- HXBXI (6 wave square osc project)
+- KromaSample
+-
+
+>ART projects
+- Music Albums
+- Traktor Mappings
+- Ableton custom racks

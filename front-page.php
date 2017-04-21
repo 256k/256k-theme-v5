@@ -99,7 +99,7 @@
 
         <?php
 
-        $WebPosts = new WP_Query('cat=5&posts_per_page=6');
+        $WebPosts = new WP_Query('cat=3&posts_per_page=6');
         if ($WebPosts-> have_posts()) :
           while ( $WebPosts-> have_posts()) : $WebPosts->  the_post();
           if (has_post_thumbnail()):
