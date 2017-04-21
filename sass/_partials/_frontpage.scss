@@ -155,7 +155,6 @@
   color: $dark-text;
   padding: 20px;
   .flex-row{
-      background: rgb(227, 227, 227);
   }
 
 
@@ -192,7 +191,7 @@
 
   .fp-blog-grid-box {
     width: 33%;
-    border: 10px solid rgb(227, 227, 227);
+    padding: 20px;
 
     .fp-blog-grid-box-image {
       width: 100%;

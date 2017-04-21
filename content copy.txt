@@ -18,3 +18,92 @@ project list:
 - Music Albums
 - Traktor Mappings
 - Ableton custom racks
+
+========================================================
+
+react timer (Tymr)
+
+Tymr is the second react project that i built during my learning of react.
+this project was build using node - babel - webpack - foundation - sass - karma - mocha.
+
+
+tymr - *link to live project*
+source code - *link to github repo*
+
+-------
+
+Weather App
+
+"saerch for any city to find out its temperature. weather information is provided by the OpenWeather API"
+Weather app is the first react project i built while learning react.
+This project was built with html - node - babel - webpack - foundation - sass.
+
+weather app *link to live project*
+
+source code *link to github repo*
+
+-------
+
+Bixi Locator
+
+Bixi locator is the first in a series of projects built to take advantage of the city of Montreal's open data API.
+
+This project let's you choose from a drop down list the street corner with a bixi bike station and tells you how many Bixis are available.
+
+this project was built using html - css - javascript - jquery & AJAX.
+
+Bixi locator *link to live project*
+source code * link to github repo*
+
+-------
+
+Ein bikes
+
+simple landing page done for Ein bikes (a custom bike shop located in Cairo Egypt *link to ein bikes*).
+
+Ein bikes site *link to live project*
+source code * link to github repo*
+
+-------
+
+HXBXI
+
+this is one of the more complex projects ive worked on. I've been super fascinated by the simplicity of inverter oscillators and spent a long time designing and tweaking schematics to put them further.
+
+This project is based on the CMOS 6 inverter IC. each inverter is it's own oscillator with it's own independent circuit. the 6 circuits are identical and work in parallel.
+
+Each circuit has 2 knobs for pitch control (1 coarse and 1 fine), 1 selector knob with 6 different banks to change the range of frequencies.
+there is a push button and switch wired in parallel to either momentarily activate the oscillator or switch it on for continuous oscillation.
+finally, i added a patch point in parallel to the pitch knobs to be able to patch oscillator circuits together so they start interfering with each other.
+
+There is also a volume knob per circuit but unfortunately dueing fabrication the circuit failed and i had to bypass them so the circuits do not have volume control.
+
+in the middle there is global control module with the same switch/button combo controlling the entire global output of the box and the volume of the box.
+
+the box is powered by a usb cable built into it for ease of power. (i often prefer going the external powering route rather than adding a battery that will need to be replaced).
+
+*link to youtube video describing the box*
+*link to youtube video of little jam demo*
+*image of HXBXI schematic*
+
+------
+
+KromaSample
+
+KromaSample is an arduino project that i built to modify the behavior of the Volca Sample's midi chart.
+
+by Default, each of the 10 sample slots on the machine sit on their own midi channel, which means that to control all the samples you'd need to talk to it simultaneously on 10 different channels.
+
+if that's not enough, even though each sample sits on its own midi channel, there is not chromatic control of the samples, so connecting a keyboard to the Volca sample and playing it would simple trigger the same sample at the same pitch across the entire keyboard note range.
+
+there are already other projects out there that interface with the Volca Sample to remap the 10 different channels into a single channel and assigning each sample to a specific note on the keyboard.
+what I wanted to do is be able to play samples chromatically so i created my own arduino sketch to remap the keyboard notes to the pitch control knob of samples. now when you play a note on the keyboard, the same is triggered AND the pitch knob is changed to the corresponding pitch of the note you played.
+
+This was not a perfect solution as the Volca sample's pitch knob only covered 4 octaves (2 up and 2 down) and because of the time stretching, the pitches on both ends of the spectrum were not properly in tune. this was a hardware limitation that i could not entirely fix but if you stay in the first octave up or down yur notes would be pitch perfect (given you dont mind time stretching/sample squeezing).
+
+*link to video of kromasample demo*
+*link to github repo of arduino sketch*
+
+-------
+
+Music
