@@ -5,7 +5,7 @@
 }
 .blog-page-content {
   font-size: 16px;
-  width: 70%;
+  width: 75%;
 }
 
 .single-blog-post-content-container{
@@ -87,13 +87,16 @@
     align-items: flex-start;
   }
   #sidebar {
-    margin-top: 20px;
-    margin-right: 40px;
-    ul {
+    margin: 40px;
+    border: 3px solid $main-color-light-shade;
+    padding: 0 40px;
+    max-width: 30%;
+    ul:last-of-type {
       list-style: none;
       padding: 0;
       text-align: center;
       li{
+        padding: 20px 0;
       a {
         transition: 0.3s ease;
         &:hover, &:focus {
@@ -103,7 +106,7 @@
       }
     }
     }
-    padding-left: 60px;
+    
     h2 {
       color: $main-color;
     }
@@ -115,7 +118,7 @@
     }
   }
 
-@media (max-width: 800px){
+@media (max-width: 900px){
   #blog-page{
     flex-direction: column;
     justify-content: center;
@@ -129,7 +132,7 @@
   
   }
   #sidebar{
-    width: 80%;
+    min-width: 80%;
     text-align: center;
     ul {
       list-style: none;
