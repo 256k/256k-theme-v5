@@ -6,10 +6,9 @@ get_header();
       
     
 <?php
-
-    $WebPosts = new WP_Query('cat=3');
-    if ($WebPosts-> have_posts()) :
-      while ( $WebPosts-> have_posts()) : $WebPosts->  the_post()
+    $blogPosts = new WP_Query('cat=3');
+    if ($blogPosts -> have_posts()):
+      while ($blogPosts ->have_posts()):$blogPosts ->the_post();
       if (has_post_thumbnail()):
         $thumbnailvar = get_the_post_thumbnail_url($post, 'full');
       else :
