@@ -31,7 +31,7 @@
       <?php the_time('d - m - Y'); ?>
     </p>
     <div class="blog-post-content">
-<?php echo  get_the_content(); ?>
+<?php the_content(); ?>
     </div>
 
     <div class="blog-post-info">
